@@ -25,7 +25,6 @@ pipeline{
         stage(test){
             steps{
                 echo "performing test on code"
-                //sh 'mvn clean cobertura:cobertura'
             }
         }
         stage(codequality){
