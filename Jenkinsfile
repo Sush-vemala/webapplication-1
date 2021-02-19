@@ -36,7 +36,7 @@ pipeline{
         stage(building){
             steps{
                 echo "building a war or jar file"
-                //sh 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
         stage(deploy){
